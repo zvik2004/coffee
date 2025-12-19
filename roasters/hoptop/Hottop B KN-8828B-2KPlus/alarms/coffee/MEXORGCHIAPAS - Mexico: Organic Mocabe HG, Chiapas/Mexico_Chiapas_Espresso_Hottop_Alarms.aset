@@ -1,0 +1,49 @@
+{
+  "alarms": [
+    {
+      "name": "Dry End",
+      "condition": "BT >= 300",
+      "action": "Power 90%, Fan 30%",
+      "enabled": true
+    },
+    {
+      "name": "Early Maillard",
+      "condition": "BT >= 330",
+      "action": "Power 75%, Fan 40%",
+      "enabled": true
+    },
+    {
+      "name": "Late Maillard",
+      "condition": "BT >= 350",
+      "action": "Power 60%, Fan 50%",
+      "enabled": true
+    },
+    {
+      "name": "FC Prep",
+      "condition": "BT >= 380",
+      "action": "Power 50%, Fan 70%",
+      "enabled": true
+    },
+    {
+      "name": "First Crack",
+      "condition": "BT >= 390",
+      "action": "Power 40%, Fan 90% (Start Dev Timer)",
+      "enabled": true
+    },
+    {
+      "name": "Development Control",
+      "condition": "BT >= 405",
+      "action": "Power 30%, Fan 90%",
+      "enabled": true
+    },
+    {
+      "name": "DROP",
+      "condition": "BT >= 412",
+      "action": "Eject / Cool",
+      "enabled": true
+    }
+  ],
+  "units": "F",
+  "roaster": "Hottop KN-8828B-2K+",
+  "profile": "Mexico Chiapas Espresso Full City"
+}
